@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Karnataka Industrial Area Development Board</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/fontawesome-4.2.0.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/styles.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/shri.css" />
+
+</head>
+<body ng-app="myapp">
+<header>
+    <div class="header">
+                    <div class="container">
+                            <a href="#" class="logo" title="KIADB"></a>
+                            <span class="logo-txt">Karnataka Industrial Area Development Board</span>
+                        <div class="pull-right logo-right">
+                            <a href="#"><img src="img/invest-karnataka.jpg" class="img-responsive" title="Invest Karnataka" /></a>
+                            <a href="#"><img src="img/k-logo.jpg" class="img-responsive" title="Karnataka" /></a>
+                            <a href="#"><img src="img/make-in-india.jpg" class="img-responsive" title="Make In India" /></a>
+                        </div>
+                    </div>
+     </div> 
+</header>
+<div class="container-fluid">
+  <div class="row bc_row">
+    <div class="container">
+        <div class="bread pull-left"  ng-controller="MyController">
+            <span ng-click="RemoveCookie()">You are here</span> : <a href="index" class="links">Home</a>
+            <span class="fa fa-angle-right"></span>
+            <span class="active">My Applications</span>
+        </div>
+        <div class="pull-right">
+            <span>Welcome User | <a href="" class="links"> Logout</a></span>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- div for download button and pagination-->
+
+<div class="container-fluid min_ht">
+  <div class="row">
+    <div class="container"> 
+    		<div>   		
+                    <h2 class="page_head full_subpg_head pull-left">Pending Applications</h2>   
+                    <div class="pull-right list-btn">
+                        <a href="javascript:;" id="listview"><i class="fa fa-area-chart" aria-hidden="true"></i></a>
+                        <a href="javascript:;" id="graphview"><i class="fa fa-list" aria-hidden="true"></i></a>
+                    </div>
+             </div>
+                    <div class="col-sm-12 col-xs-12 dma_application_filters">
+                    	<form class="form-inline pull-left">
+                              <div class="form-group dtpkr">
+                                <input type="text" class="form-control" id="dob" placeholder="Start Date">
+                                <span class="gail-sprite dob-img"></span>
+                              </div>
+                              <div class="form-group dtpkr">
+                                <input type="text" class="form-control" id="dob2" placeholder="End Date">
+                                <span class="gail-sprite dob-img"></span>
+                              </div>
+                              <div class="form-group">
+                                <select class="form-control">
+                                        <option value="" selected disabled>Select Area</option>
+                                		<option>Bangalore</option>
+                                        <option>Mumbai</option>
+                                        <option>Pune</option>
+                                </select>                                
+                              </div>
+                              <div class="form-group">
+                                <select class="form-control">
+                                	    <option value="" selected disabled>Select Status</option>
+                                		<option>Open</option>
+                                        <option>Close</option>
+                                        <option>Terminate</option>
+                                </select>
+                              </div>
+                              <a href="javascript:;" title="Filter" class="btn btn-primary whiteTxt guppercase filterbtn"><i class="fa fa-filter"></i></a>
+                              <a href="javascript:;" title="Refresh" class="btn btn-primary whiteTxt guppercase filterbtn" ><i class="fa fa-refresh"></i></a>
+                        </form>
+                        <form class="form-inline pull-right">
+                            <div class="form-group adminsrchblk">
+                                <input name="searchKeyword"  placeholder="search" id="searchKeyword" type="text"  class="form-control"><i class="fa fa-search search_icon"></i>
+                            </div>
+                        </form>
+                    </div>
+            <div class="table-responsive hidden-xs normalview" >
+            <!-- to be displayed for desktop and ipad-->
+                <table id="resp" class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th class="text-center"># <span class="caret"></span></th>
+                      <th></th>
+                      <th>Request Type <span class="caret"></span></th>
+                      <th class="text-center">Date <span class="caret"></span></th>
+                      <th>Contact Details</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class='clickable-row' data-href='view-application'>
+                      <td scope="row" class="text-center"><a class="links" href="javascript:void(0)">23353</a></td>
+                      <td></td>
+                      <td>Allotment letter</td>
+                      <td class="text-center">12 Apr 17</td>
+                      <td>
+                          <span>Mr Ram Verma</span><br/>
+                          <span>Belgaum, Karnataka</span><br/>
+                          <span class="dma_application_call"><i class="fa fa-phone" aria-hidden="true"></i> +91 9820098200  </span> <span> <i class="fa fa-envelope" aria-hidden="true"></i> ram.verma@gmail.com</span>                     
+                      </td>
+                      <td>Open</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='view-application'>
+                      <td class="text-center" scope="row"><a class="links" href="javascript:void(0)">34562</a></td>
+                      <td></td>
+                      <td>Completion Certificate</td>
+                      <td class="text-center">11 Apr 17</td>
+                      <td>
+                          <span>Mr Ram Verma</span><br/>
+                          <span>Belgaum, Karnataka</span><br/>
+                          <span class="dma_application_call"><i class="fa fa-phone" aria-hidden="true"></i> +91 9820098200  </span> <span> <i class="fa fa-envelope" aria-hidden="true"></i> ram.verma@gmail.com</span>                     
+                      </td>
+                      <td>In Progress</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='view-application'>
+                      <td class="text-center" scope="row"><a class="links" href="javascript:void(0)">43254</a></td>
+                      <td></td>
+                      <td>Possession Certificate</td>
+                      <td class="text-center">10 Apr 17</td>
+                      <td>
+                          <span>Mr Ram Verma</span><br/>
+                          <span>Belgaum, Karnataka</span><br/>
+                          <span class="dma_application_call"><i class="fa fa-phone" aria-hidden="true"></i> +91 9820098200  </span> <span> <i class="fa fa-envelope" aria-hidden="true"></i> ram.verma@gmail.com</span>                     
+                      </td>
+                      <td>Closed</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='view-application'>
+                      <td class="text-center" scope="row"><a class="links" href="javascript:void(0)">2312248</a></td>
+                      <td></td>
+                      <td>Completion Certificate</td>
+                      <td class="text-center">05 Apr 17</td>
+                      <td>
+                          <span>Mr Ram Verma</span><br/>
+                          <span>Belgaum, Karnataka</span><br/>
+                          <span class="dma_application_call"><i class="fa fa-phone" aria-hidden="true"></i> +91 9820098200  </span> <span> <i class="fa fa-envelope" aria-hidden="true"></i> ram.verma@gmail.com</span>                     
+                      </td>
+                      <td>Open</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='view-application'>
+                      <td class="text-center" scope="row"><a class="links" href="javascript:void(0)">2312248</a></td>
+                      <td></td>
+                      <td>Possession Certificate</td>
+                      <td class="text-center">02 Apr 17</td>
+                      <td>
+                          <span>Mr Ram Verma</span><br/>
+                          <span>Belgaum, Karnataka</span><br/>
+                          <span class="dma_application_call"><i class="fa fa-phone" aria-hidden="true"></i> +91 9820098200  </span> <span> <i class="fa fa-envelope" aria-hidden="true"></i> ram.verma@gmail.com</span>                     
+                      </td>
+                      <td>Closed</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+            </div>
+            <!-- end of divs-->
+            <div class="graphview">
+            <!-- will be displayed for toggle only-->
+            <div class="row">
+            <div class="col-sm-12">
+              <div class="row">
+            <div class="overview_blk">
+                <div class="head">
+                    <span style="font-size:18px">Applications Summary</span>
+                    <span class="time_stmp">10/05/2017 12:000AM<span>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 risk_summary">
+                        <span>Request Types</span>
+                        <div class="graph" ng-controller="BarCtrladmin">
+                          <canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-options="options" chart-series="series" chart-colors='colors' chart-dataset-override='dataset' chart-click="onClick"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-md-2 risk_blocks">
+                        <div class="blocks">
+                            <div class="risk_cnt">
+                                <i class="fa fa-user" aria-hidden="true"></i> 79                                
+                            </div>
+                            <span class="risk_title">In Progress</span>
+                        </div>
+                        <div class="blocks blok">
+                            <div class="risk_cnt">
+                                <i class="fa fa-user" aria-hidden="true"></i> +7                                
+                            </div>
+                            <span class="risk_title">Completed</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 risk_app">
+                        <span>Pending for <strong>Allotment</strong></span>
+                        <ul class="lists">
+			    <li><i class="fa fa-user" aria-hidden="true"></i> 7 | Agri & Food Processing</li>
+		            <li><i class="fa fa-user" aria-hidden="true"></i> 5 | Auto Mobiles & Auto Components</li>
+                            <li><i class="fa fa-user" aria-hidden="true"></i> 3 | Pharmaceuticals</li>
+                            <li><i class="fa fa-user" aria-hidden="true"></i> 3 | Biotech</li>
+                            <li><i class="fa fa-user" aria-hidden="true"></i> 1 | Aerospace and Defence</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 risk_alerts">
+                        <span>Pending for <strong>Completion Certificate</strong></span>
+                        <ul class="lists">
+                            <li><i class="fa fa-user" aria-hidden="true"></i> 15 | Agri & Food Processing</li>
+                            <li><i class="fa fa-user" aria-hidden="true"></i> 10 | Electronics,Hardware & Electricals</li>
+                            <li><i class="fa fa-user" aria-hidden="true"></i> 09 | Auto Mobiles & Auto Components</li>
+                            <li><i class="fa fa-user" aria-hidden="true"></i> 07 | Plastics & Chemicals</li>
+                            <li><i class="fa fa-user" aria-hidden="true"></i> 02 | Aerospace and Defence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+            </div>
+	  
+
+
+
+      <!-- Graph starts here -->
+
+      <!-- Linechart -->
+      <div class="row">
+      <div class="col-sm-12">
+      <div class="row">
+       
+          <div class="col-sm-6" ng-controller="LineCtrl">
+          <h4 class="graphtitle">Request Trend</h4>
+            <div class="col-sm-12 grid_col">
+            <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-options="options" chart-colors='colors' chart-dataset-override="datasetOverride" chart-click="onClick"> </canvas>
+            </div>
+            </div>
+          
+          <div class="col-sm-6" ng-controller="BarCtrl">
+          <h4 class="graphtitle">Sector Wise Requests</h4>
+            <div class="col-sm-12 grid_col">
+            <canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-options="options" chart-series="series" chart-colors='colors' chart-dataset-override='dataset' chart-click="onClick"></canvas>
+            </div>
+            </div>
+        </div>
+		
+		
+      <div class="row" style=" padding-top:15px">
+       
+          <div class="col-sm-6" ng-controller="LineCtrl1">
+          <h4 class="graphtitle">Location wise Investments Trend (in Cr)</h4>
+            <div class="col-sm-12 grid_col">
+            <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-options="options" chart-colors='colors' chart-dataset-override="datasetOverride" chart-click="onClick"> </canvas>
+            </div>
+            </div>
+          
+          <div class="col-sm-6" ng-controller="BarCtrl">
+          <h4 class="graphtitle">Location Based Traction</h4>
+            <div class="col-sm-12 grid_col localmap" style="height: 285px;">
+                <a href="javascript:;" id="mapImg"><img class="img-responsive" id="map2" src="img/map-01.png" /></a>
+                 <!--<canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-options="options" chart-series="series" chart-colors='colors' chart-dataset-override='dataset' chart-click="onClick"></canvas>onclick="document.getElementById('map2').src='images/map-02.png'"-->
+            </div>
+            </div>
+        </div>		
+		
+		
+		
+      </div>
+    </div>
+         </div>   
+            
+            
+            
+            <!--end of div-->
+      
+     </div>     
+  </div>
+</div>
+
+<!-- div for download button and pagination-->
+
+<div class="container-fluid paginationblk">
+    <div class="row">
+            <div class="container">
+                <div class="row dma_pagintions">
+                    <div class="col-sm-12 col-xs-12">
+                        <ul class="pagination pull-right">
+                          <li><a href="#"><<</a></li>
+                          <li><a href="#"><</a></li>
+                          <li><a href="#">1</a></li>
+                          <li class="active"><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">>></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+     </div>     
+  </div>
+</div>
+
+
+<!--start of footer-->
+<div class="container-fluid"  >
+  <div class="row site_footer">
+    <div class="container">
+      <div class="row">
+         <div class="copy-txt">Copyright 2017 Karnataka Industrial Area Development Board</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JAVASCRIPTS --> 
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/bootstrap-datepicker.min.js"></script>
+<script src="scripts/dma-main.js"></script>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/angular-cookies.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/angular-chart.js"></script>
+<script src="js/shri.js"></script>
+
+<script>
+
+        
+
+        $('#listview').click(function(){
+          $(this).hide();
+          $('.graphview,.paginationblk,#graphview').show();
+          $('.normalview').hide();  
+        });
+        $('#graphview').click(function(){
+          $(this).hide();
+          $('.graphview,.paginationblk').hide();
+          $('.normalview,#listview').show();  
+        })
+        
+    </script>
+</body>
+</html>

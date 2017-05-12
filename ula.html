@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Karnataka Industrial Area Development Board</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/fontawesome-4.2.0.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/main.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/responsive.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/aos.css" rel="stylesheet">
+<link href="styles/responsive_1024.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/styles.css" rel="stylesheet" />
+<link href="scripts/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body class="bdy_login" ng-app="MyApp" ng-controller="MyController">
+
+
+  <header>
+        <div class="header">
+            <div class="container">
+                    <a href="#" class="logo" title="KIADB"></a>
+                    <span class="logo-txt">Karnataka Industrial Area Development Board</span>
+                <div class="pull-right logo-right">
+                    <a href="#"><img src="img/invest-karnataka.jpg" class="img-responsive" title="Invest Karnataka" /></a>
+                    <a href="#"><img src="img/k-logo.jpg" class="img-responsive" title="Karnataka" /></a>
+                    <a href="#"><img src="img/make-in-india.jpg" class="img-responsive" title="Make In India" /></a>
+                </div>
+            </div>
+        </div> 
+    </header>
+
+<div class="container-fluid">
+  <div class="row bc_row">
+    <div class="container">
+      <span ng-click="RemoveCookie()">You are here</span> : <a class="links" href="index">Home</a>
+      <span class="fa fa-angle-right"></span>
+      <span class="active">Applications Details</span>
+    </div>
+  </div>
+</div>
+<div class="container-fluid dma_app">
+  <div class="row">
+    <div class="container trackappContainer min_cont_ht">
+      <h2 class="page_head full_subpg_head">Applications Details - <span style="color:#fdb433;">5698723514 - In progress</span></h2>
+      <!--start of step navigation-->
+    <div>        
+        <div class="progressblk tab_bg fL"><div class="progress-circleblk ">
+          <div class="middle-section"></div>
+
+           <div class="apply-circle-blk circleblk-wrapper fL completed">
+            <div class="apply-circle circleblk">
+              1
+            </div>
+            <span class="c2a_title circleblktxt">Apply</span>
+          </div>
+
+           <div class="payment-circle-blk circleblk-wrapper fL completed">
+            <div class="payment-circle circleblk">
+              2
+            </div>
+            <span class="c2a_title circleblktxt">Payments</span>
+          </div>
+
+          <div class="payment-circle-blk circleblk-wrapper fL doc-pay current">
+            <div class="payment-circle circleblk">
+              3
+            </div>
+            <span class="c2a_title circleblktxt">Upload Lease Agreement</span>
+          </div>
+
+          <div class="payment-circle-blk circleblk-wrapper fL commencement-txt pending">
+            <div class="payment-circle circleblk">
+              4
+            </div>
+            <span class="c2a_title circleblktxt">Upload Building Drawings</span>
+          </div>
+
+          <div class="payment-circle-blk circleblk-wrapper fL meter-install pending">
+            <div class="payment-circle circleblk">
+              5
+            </div>
+            <span class="c2a_title circleblktxt">Request Completion Certificate</span>
+          </div>
+        </div>
+        </div>       
+    </div>
+    <!--end of step navigation-->
+      	<div class="trackAppCnt1" id="trackAppCnt">         
+        <h3 class="full_subpg_head lftpadding">Upload Lease Agreement</h3>   
+            <div class="dma_documents applynow-form track_app_doc">            
+            <div class="payment-detailblk1" id="payment-detailblk">
+                <div class="row">
+                    <div class="col-md-2 ">Lease Agreement</div>
+                    <div class="col-md-5  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">&#10005;</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadMeterScreenshot()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+                <div class="checkmodes" ><!-- checkmode blk -->
+                  
+                <div class="row">
+                  <div class="col-md-3">
+                    <!-- <input type="button" class="btn applynow-btn whiteTxt lightgreenbg guppercase" value="Back" onclick="location.href='supporting-documents'"/> -->
+                    <a id="ula" class="btn btn-primary whiteTxt guppercase" data-ula='ula' ng-click="WriteCookie()">Submit</a>
+                  </div>
+                </div>
+                <div class="row"></div>
+                </div>                
+            </div>
+
+            <hr>
+            <div class="payblk">
+              <!-- <h2 class="page_head full_subpg_head">Applications Details - <span style="color:#fdb433;">XXXXXXXX - In progress</span></h2> -->
+                <div class="comments_section">
+                       <div class="comment_description">
+                           <h5 class="sub_heads_2">Activity Log</h5>
+                           <!-- <p class="odd"><span class="date_style">20/01/2017</span> <span>Received Completion Certificate</span> <a class="links_2 linkbtn" >View</a></p>
+                           
+                           <p class=""><span class="date_style">15/01/2017</span> <span>Completion Certificate Request Submitted Successfully</span> </p>
+
+                           <p class="odd"><span class="date_style">12/12/2016</span> <span>Building Drawings Approval Received</span> </p>
+
+                           <p class=""><span class="date_style">10/12/2016</span> <span>Uploaded Building Drawings</span> <a class="links_2 linkbtn" >View</a></p>
+
+                           <p class="odd"><span class="date_style">25/11/2016</span> <span>Lease Agreement Approval Received</span> </p>
+                           
+                           <p class=""><span class="date_style">22/11/2016</span> <span>Uploaded Lease Agreement</span> <a class="links_2 linkbtn" >View</a></p>
+ -->
+                           <p class="odd"><span class="date_style">20/10/2016</span> <span>Received Possession Letter</span> <a class="links_2 linkbtn" >View</a></p>
+
+                           <p class=""><span class="date_style">15/10/2016</span> <span>Made Payments - Transaction ID: 5569781456, Amount: 34 Lacs, Mode: Online</span> </p>
+
+                           <p class="odd"><span class="date_style">20/08/2016</span> <span>Received Allotment Letter</span> <a class="links_2 linkbtn" >View</a></p>
+
+                           <p class=""><span class="date_style">05/08/2016</span> <span>Application Request Submitted Successfully</span> </p>
+                        </div>              
+                </div>
+                <div class="view_app_wrap">
+                            <div class="row_wrap">
+                                <h5 class="sub_heads">Personal Details</h5>
+                                <div class="row">
+                                    <div class="col-md-2 col-xs-5 gap">First Name</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>Ramesh</strong></div>
+                                    <div class="col-md-2 col-xs-5 gap">Middle Name</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>Kumar</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-xs-5 gap">Last Name</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>Joshi</strong></div>
+                                    <div class="col-md-2 col-xs-5 gap">Company Name</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong> A To Z Enterprise</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-xs-5 gap">Phone No</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>+12855451</strong></div>
+                                    <div class="col-md-2 col-xs-5 gap">Mobile No</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>9820098200</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-xs-5 gap">Email Id</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>rameshkumar@atoz.com</strong></div>
+                                    <div class="col-md-2 col-xs-5 gap">State</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>Karnataka</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-xs-5 gap">Country</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>India</strong></div>
+                                    <div class="col-md-2 col-xs-5 gap">Sector Name</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>Automobiles</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-xs-5 gap">Location of Interest</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>Belgaum </strong></div>
+                                    <div class="col-md-2 col-xs-5 gap">Name of the Project</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>AtoZ Automobiles</strong></div>
+                                </div>
+                            </div>
+                </div>
+                <div class="view_app_wrap">
+                            <div class="row_wrap">
+                                <h5 class="sub_heads">Brief Description about the Project:</h5>
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-5 gap">Approximate Investment for the Project (In Crores)</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>5.2 Crores</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-5 gap">Approximate Land Required for the Project (In Acres)</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>2 Acres</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-5 gap">Employment</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>500</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-5 gap">Product/Activity</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>Cars</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-5 gap">Information Source Name</div>
+                                    <div class="col-md-4 col-xs-7 gap"><strong>Walk In</strong></div>
+                                </div>
+                            </div>
+
+
+                            <!--add below code for verification application - Finance code online-->
+                </div>
+                <div class="view_app_wrap">
+
+                            <div class="row_wrap">
+                                <h5 class="sub_heads">Documents</h5>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">1. Brief Note on the present activities of the Company</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">activities.pdf</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">2. Project Layout Map</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">map.pdf</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">3. Project Implementation Schedule</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">schedule.pdf</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">4. Detailed Project Report</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">report.pdf</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">5. IT return of individual promoter</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">returns.pdf</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">6. CA Certified Net Worth Statement of each Individual Promoter/Director</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">implementation.pdf</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">7. Pan Card of Promoter/Company</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">pancard.pdf</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">8. Audited Account Report of the concerned</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">audited-report.pdf</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">9. Partnership deed/Registration of firms</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">registration.pdf</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">10. Incorporation certificate issued by ROC</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">certificate-roc.pdf</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">11. Memorandum and Article of Association Company/Form 32</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">memorandum.pdf</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">12. CA Certified Net Worth Statement of the company</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">worth-statement.pdf</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">13. Registration Certificate of Co-operative Society</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">society-certificate.pdf</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-4 gap">14. Society by Law</div>
+                                    <div class="col-md-3 col-xs-4 gap"><a class="links_2" href="">society-law.pdf</a></div>
+                                </div>
+                            </div>
+                                   
+      <!--end below code for verification application - Finance code online-->
+                        
+                            
+                                        <!--end below code for verification application code online-->
+                </div>
+            </div>
+            </div>  
+            </div>   
+  </div>
+</div>
+</div>
+<!--start of footer-->
+ <div id="back_top" style="display: block;"><a title="Back to Top" class="effect" href="javascript:;"></a></div>
+  <div class="">
+    <div class="landing_footer newftr fL g5" style="bottom:0; top:inherit;">
+    <div class="footer-left text-center">
+      <div class="copy-txt">Copyright 2017 Karnataka Industrial Area Development Board</div>
+    </div>
+  </div>
+</div>
+<!--end of footer-->
+<!-- JAVASCRIPTS --> 
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/bootstrap-datepicker.min.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/track-application.js"></script>
+<script src="scripts/aos.js"></script>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/angular-cookies.min.js"></script>
+
+<script src="scripts/sweetalert2.js"></script>
+<script src="scripts/es6-promise.auto.min.js"></script>
+  <script>
+      AOS.init({
+        easing: 'ease',
+        once: true,
+        duration: 1000,
+        offset: 10
+      });
+    </script>
+    <script>
+        var app = angular.module('MyApp', ['ngCookies']);
+        app.controller('MyController', function ($scope, $window, $cookieStore) {
+          var ulabtn = $('#ula').attr('data-ula');
+            $scope.WriteCookie = function () {
+                $cookieStore.put("Name", ulabtn);
+                console.log(ulabtn);
+                swal(
+                  'Success!',
+                  'Request Submitted Successfully',
+                  'success'
+                )
+            };
+            $scope.ReadCookie = function () {
+                $window.alert($cookieStore.get('Name'));
+            };
+
+
+            $scope.RemoveCookie = function () {
+                $cookieStore.remove('Name');
+            };
+
+                $(document).ready(function(){
+                  $([window]).focus(function(){
+                   var a = $cookieStore.get('Name');
+                  console.log(a);
+                  if(a == 'ula'){
+                    window.location.href="ubd";
+                } else{
+                    //$scope.setCookie = false;
+                }
+                   }).focusout(function(){
+
+                 });
+               })
+        });
+
+        
+    </script>
+
+
+</body>
+</html>

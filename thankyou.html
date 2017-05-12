@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Karnataka Industrial Area Development Board</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/fontawesome-4.2.0.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/main.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/responsive.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/aos.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet" />
+<link href="styles/responsive_1024.css" rel="stylesheet" type="text/css" media="all">
+
+</head>
+<body class="bdy_login" ng-app="MyApp" ng-controller="MyController">
+
+
+  <header>
+        <div class="header">
+            <div class="container">
+                    <a href="#" class="logo" title="KIADB"></a>
+                    <span class="logo-txt">Karnataka Industrial Area Development Board</span>
+                <div class="pull-right logo-right">
+                    <a href="#"><img src="img/invest-karnataka.jpg" class="img-responsive" title="Invest Karnataka" /></a>
+                    <a href="#"><img src="img/k-logo.jpg" class="img-responsive" title="Karnataka" /></a>
+                    <a href="#"><img src="img/make-in-india.jpg" class="img-responsive" title="Make In India" /></a>
+                </div>
+            </div>
+        </div> 
+    </header>
+
+<div class="container-fluid">
+  <div class="row bc_row">
+    <div class="container">
+      <span ng-click="RemoveCookie()">You are here</span> : <a class="links" href="index">Home</a>
+      <span class="fa fa-angle-right"></span>
+      <span class="active">Applications Details</span>
+    </div>
+  </div>
+</div>
+<div class="container-fluid dma_app">
+  <div class="row">
+    <div class="container trackappContainer min_cont_ht">
+      <h2 class="page_head full_subpg_head">Thank You!</h2>
+      <!--start of step navigation-->
+    <div>        
+        <div class="progressblk tab_bg fL"><div class="progress-circleblk ">
+          <div class="middle-section"></div>
+
+           <div class="apply-circle-blk circleblk-wrapper fL current">
+            <div class="apply-circle circleblk">
+              1
+            </div>
+            <span class="c2a_title circleblktxt">Apply</span>
+          </div>
+
+           <div class="payment-circle-blk circleblk-wrapper fL pending">
+            <div class="payment-circle circleblk">
+              2
+            </div>
+            <span class="c2a_title circleblktxt">Payments</span>
+          </div>
+
+          <div class="payment-circle-blk circleblk-wrapper fL doc-pay pending">
+            <div class="payment-circle circleblk">
+              3
+            </div>
+            <span class="c2a_title circleblktxt">Upload Lease Agreement</span>
+          </div>
+
+          <div class="payment-circle-blk circleblk-wrapper fL commencement-txt pending">
+            <div class="payment-circle circleblk">
+              4
+            </div>
+            <span class="c2a_title circleblktxt">Upload Building Drawings</span>
+          </div>
+
+          <div class="payment-circle-blk circleblk-wrapper fL meter-install pending">
+            <div class="payment-circle circleblk">
+              5
+            </div>
+            <span class="c2a_title circleblktxt">Request Completion Certificate</span>
+          </div>
+        </div>
+        </div>          
+    </div>
+    <!--end of step navigation-->
+      	<div class="container">
+          <!-- <h2 class="page_head full_subpg_head">Thank You!</h2> -->
+            <div class="dma_customer_details">
+              <p>Thank You for applying. You have sent application successfully</p>
+              <p>Your Application ID: <strong>254654</strong></p>
+              <p>The confirmation has also been sent to your email address: xyz@gmail.com</p>
+
+                    
+            </div>   
+     </div>   
+  </div>
+</div>
+</div>
+<!--start of footer-->
+<div id="back_top" style="display: block;"><a title="Back to Top" class="effect" href="javascript:;"></a></div>
+  <div class="">
+    <div class="landing_footer newftr fL g5" style="bottom:0; top:inherit;">
+    <div class="footer-left text-center">
+      <div class="copy-txt">Copyright 2017 Karnataka Industrial Area Development Board</div>
+    </div>
+  </div>
+</div>
+<!--end of footer-->
+<!-- JAVASCRIPTS --> 
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/bootstrap-datepicker.min.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/track-application.js"></script>
+<script src="scripts/aos.js"></script>
+
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/angular-cookies.min.js"></script>
+  <script>
+      AOS.init({
+        easing: 'ease',
+        once: true,
+        duration: 1000,
+        offset: 10
+      });
+    </script>
+    <script>
+        var app = angular.module('MyApp', ['ngCookies']);
+        app.controller('MyController', function ($scope, $window, $cookieStore) {
+            $scope.WriteCookie = function () {
+                $cookieStore.put("Name", $scope.Name);
+                //$scope.setCookie = true;
+            };
+            $scope.ReadCookie = function () {
+                $window.alert($cookieStore.get('Name'));
+            };
+
+            $scope.RemoveCookie = function () {
+                $cookieStore.remove('Name');
+            };
+
+                $(document).ready(function(){
+                  $([window]).focus(function(){
+                    console.log(1)
+                   var a = $cookieStore.get('Name');
+                  console.log(a);
+                  if(a == 'redirectToPayment'){
+                    window.location.href="payment";
+                } else{
+                    
+                }
+                   }).focusout(function(){
+
+                 });
+               })
+        });
+
+        
+    </script>
+
+
+</body>
+</html>

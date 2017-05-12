@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Karnataka Industrial Area Development Board</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/fontawesome-4.2.0.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/main.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/responsive.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/aos.css" rel="stylesheet">
+<link href="styles/responsive_1024.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/styles.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+</head>
+<body class="bdy_login">
+
+
+  <header>
+        <div class="header">
+            <div class="container">
+                    <a href="#" class="logo" title="KIADB"></a>
+                    <span class="logo-txt">Karnataka Industrial Area Development Board</span>
+                <div class="pull-right logo-right">
+                    <a href="#"><img src="img/invest-karnataka.jpg" class="img-responsive" title="Invest Karnataka" /></a>
+                    <a href="#"><img src="img/k-logo.jpg" class="img-responsive" title="Karnataka" /></a>
+                    <a href="#"><img src="img/make-in-india.jpg" class="img-responsive" title="Make In India" /></a>
+                </div>
+            </div>
+        </div> 
+    </header>
+<!-- breadcrumb -->
+<div class="container-fluid">
+  <div class="row bc_row">
+    <div class="container">
+      You are here : <a class="links" href="index">Home</a>
+      <span class="fa fa-angle-right"></span>
+      <span class="active">Applications Details</span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="container">
+    <h2 class="page_head full_subpg_head">Application Form</h2>
+    <!--start of step navigation-->
+    <div>        
+        <div class="progressblk tab_bg fL"><div class="progress-circleblk ">
+          <div class="middle-section"></div>
+
+           <div class="apply-circle-blk circleblk-wrapper fL current">
+            <div class="apply-circle circleblk">
+              1
+            </div>
+            <span class="c2a_title circleblktxt">Apply</span>
+          </div>
+
+           <div class="payment-circle-blk circleblk-wrapper fL pending">
+            <div class="payment-circle circleblk">
+              2
+            </div>
+            <span class="c2a_title circleblktxt">Payments</span>
+          </div>
+
+          <div class="payment-circle-blk circleblk-wrapper fL doc-pay pending">
+            <div class="payment-circle circleblk">
+              3
+            </div>
+            <span class="c2a_title circleblktxt">Upload Lease Agreement</span>
+          </div>
+
+          <div class="payment-circle-blk circleblk-wrapper fL commencement-txt pending">
+            <div class="payment-circle circleblk">
+              4
+            </div>
+            <span class="c2a_title circleblktxt">Upload Building Drawings</span>
+          </div>
+
+          <div class="payment-circle-blk circleblk-wrapper fL meter-install pending">
+            <div class="payment-circle circleblk">
+              5
+            </div>
+            <span class="c2a_title circleblktxt">Request Completion Certificate</span>
+          </div>
+        </div>
+        </div>     
+    </div>
+    <!--end of step navigation-->
+    <div class="row" ng-controller="addresscontroller" ng-app="addressapp">
+      <div class="col-sm-9">
+        <form class="form-horizontal applynow-form" method="post" action="javascript:void(0)" novalidate>
+          <!-- <div class="form-group">
+            <label class="control-label col-sm-6" for="selectArea">Area</label>
+            <div class="col-sm-6">
+              <select class="form-control" id="selectArea">
+                <option value="selectarea" selected="selected" disabled="disabled">Select Area</option>
+                <option value="1">Area 1</option>
+                <option value="2">Area 2</option>
+                <option value="3">Area 3</option>
+                <option value="4">Area 4</option>
+              </select>
+            </div>
+          </div> -->
+          <div class="form-overlayblk">
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="houseno">First Name</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="houseno" ng-model="user.houseno" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="street">Middle Name</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="street" ng-model="user.street" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="post_office">Last Name</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="post_office" ng-model="user.postoffice" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="district">Company Name</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="district" ng-model="user.district" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="telephone_no">Phone Number</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="telephone_no" ng-model="user.telephoneno"  onkeypress="return gailHomepage.Alphanumeric(event)" maxlength="12" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="mobile_no">Mobile Number</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="mobile_no" ng-model="user.mobileno"  onkeypress="return gailHomepage.Alphanumeric(event)" maxlength="12" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="email_id">Email Id</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="email_id" ng-model="user.emailid" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="email_id">State</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="email_id" ng-model="user.emailid" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="email_id">Country</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="email_id" ng-model="user.emailid" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="state">Sector Name</label>
+            <div class="col-sm-6">
+              <select class="form-control" ng-model="user.selectstate">
+                <option value="selectstate" selected="selected" disabled="disabled">Select</option>
+                <option value="state 1">Aerospace</option>
+                <option value="state 2">Automobiles</option>
+                <option value="state 3">Biotech</option>
+                <option value="state 4">Cement</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="state">Location of Interest</label>
+            <div class="col-sm-6">
+              <select class="form-control" ng-model="user.selectstate">
+                <option value="selectstate" selected="selected" disabled="disabled">Select</option>
+                <option value="state 1">Belgaum</option>
+                <option value="state 2">Gulbarga</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="email_id">Name of Project</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="email_id" ng-model="user.emailid" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="email_id">Brief Description about the project</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="email_id" ng-model="user.emailid" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="pincode">Approximate Investment for the Project (In Crores)</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="pincode" ng-model="user.pincode"  onkeypress="return gailHomepage.Alphanumeric(event)" maxlength="6" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="pincode">Approximate Land Required for the Project (In Acres)</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="pincode" ng-model="user.pincode"  onkeypress="return gailHomepage.Alphanumeric(event)" maxlength="6" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="pincode">Employment</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="pincode" ng-model="user.pincode"   maxlength="6" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="pincode">Product/Activity</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="pincode" ng-model="user.pincode"   maxlength="6" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-6" for="state">Information Source Name</label>
+            <div class="col-sm-6">
+              <select class="form-control" ng-model="user.selectstate">
+                <option value="selectstate" selected="selected" disabled="disabled">Select</option>
+                <option value="state 1">From Web</option>
+                <option value="state 2">WalkIn</option>
+              </select>
+            </div>
+          </div>
+
+
+          <hr>
+          <div class="presentaddrblk">
+          <h3 class="apply_heading">Attach Documents</h3>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">Brief Note on the present activities of the Company</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow1">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">Project Layout Map</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">Project Implementation Schedule</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">Detailed Project Report</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">IT return of individual promoter</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">CA Certified Net Worth Statement of each Individual Promoter/Director</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">Pan Card of Promoter/Company</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">Audited Account Report of the concerned</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">Partnership deed/Registration of firms</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">Incorporation certificate issued by ROC</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">Memorandum and Article of Association Company/Form 32</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">CA Certified Net Worth Statement of the company</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">Registration Certificate of Co-operative Society</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="form-group">
+          <label class="control-label col-sm-6" for="state">Society by Law</label>
+            <div class="col-md-6  filevalblk">
+                        <div class="browseblk fL">
+                            <label class="btn btn-filecolor btn-file btn-lightgreen" id="poilabel">
+                                <i class="fa fa-folder-open-o"></i>
+                                <input type="file" file-model="MeterFile" class="inptfile" id="fileIDProof" style="display: none;">
+                            </label>
+                            <p class="filevalblk-wrapper"><span class="fileval truncate fL"></span><span class="removefileval fL">✕</span></p>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-click="uploadbtn()">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="btn btn-filecolor btn-file uploadblk btn-lightgreen fL" ng-show="uploadshow">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+          </div>
+          
+          
+          <div class="form-group applynow-btn-blk">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+              <!-- <input type="button" class="btn applynow-btn whiteTxt lightgreenbg guppercase" value="Back" onclick="location.href='apply-now-physical'"/> -->
+              <input type="submit" name="Next" value="Send Application" class="btn applynow-btn whiteTxt lightgreenbg guppercase" onclick="location.href='thankyou'">
+              <!-- <button type="button" class="btn applynow-btn whiteTxt greenbg guppercase" ng-click="reset()">Reset</button> -->
+            </div>
+          </div>
+          </div>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+    </div>
+  </div>
+</div>
+
+<!--start of footer-->
+
+  <div id="back_top" style="display: block;"><a title="Back to Top" class="effect" href="javascript:;"></a></div>
+  <div class="">
+    <div class="landing_footer newftr fL g5" style="bottom:0; top:inherit;">
+    <div class="footer-left text-center">
+      <div class="copy-txt">Copyright 2017 Karnataka Industrial Area Development Board</div>
+    </div>
+  </div>
+</div>
+<!--end of footer-->
+<!-- JAVASCRIPTS --> 
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/bootstrap-datepicker.min.js"></script>
+<script src="scripts/aos.js"></script>
+  <script>
+      AOS.init({
+        easing: 'ease',
+        once: true,
+        duration: 1000,
+        offset: 10
+      });
+    </script>
+<script>
+  var addressapp = angular.module('addressapp', []);
+
+  addressapp.controller('addresscontroller',['$scope',function($scope){
+    $scope.master = {};
+    $scope.sameaddr = function() {
+        $scope.users = angular.copy($scope.user);
+    };
+
+    $scope.reset = function() {
+        $scope.user = angular.copy($scope.master);
+        $scope.users = angular.copy($scope.master);
+    };
+    $scope.reset();
+
+    $scope.uploadbtn = function(){
+      $scope.uploadshow1 = true;
+    }
+
+  }])
+
+  $(document).ready(function(){
+        $(document).on('change', ':file', function() {
+            var input = $(this),
+                numFiles = input.get(0).files ? input.get(0).files.length : 1,
+                label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.val('').closest('.filevalblk').find('.filevalblk-wrapper').show().find('.fileval')(label);
+            });
+        $('.removefileval').click(function(e){
+          e.preventDefault();
+          $(this).closest('.filevalblk').find('.filevalblk-wrapper').hide();
+        });
+      })
+
+</script>
+</body>
+</html>

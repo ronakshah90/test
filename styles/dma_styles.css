@@ -1,0 +1,141 @@
+/****************** login styles *******************/
+
+.fa-sign-in{color:#ffffff;}
+.page-header {display: block;overflow: hidden;}
+.banner_wrap_login{background:#00b5ea url(../images/img01.jpg) no-repeat; width:100%; height:100%; background-size:cover; padding:0;position:fixed;}
+.banner_wrap_login header{background: #f5f5f5;}
+.form-container .page-header{margin: 100px 0 20px;}
+.dma_logo{float:left;}
+.page-header i{float:right;}
+.spacing {padding-bottom:15px;}
+.spacing span{color: #ffffff;vertical-align: 5px;}
+.spacing p{color: #ffffff;text-align:center}
+.checkbox-style{width: 20px;height: 20px;padding: 10px;}
+.middlePage {position: absolute;top: 100px;left: 0;right: 0;bottom: 0;margin: 0 auto;}
+.logo {color: #ffffff;font-size: 24px;}
+/*.forgot_password_btn{width: 49%;display: block;padding: 5px;background: #ff0000;border-radius: 3px;text-align: center;color: #fff !important;font-size: 14px;}*/
+.forgot_password_btn{padding: 5px;color: #fff !important;font-size: 14px;text-decoration:none !important;}
+#singlebutton{    width: 100%;background:#005f8c;border:none;padding: 8px 0;}
+.panel-body {padding: 15px 0;background: rgba(0,0,0,.4);}
+fieldset {border-bottom: 1px solid #ffffff;}
+.panel-heading{background: #fff;text-align: center;}
+.input-md{margin:15px 0;}
+.stickyheader {position:static !important;}
+/***********DMA Applications******************/
+
+.dma_view{border-top: 5px solid #005f8c;}
+.dma_head{font-size: 28px;color: #161616;padding: 25px 0 25px;margin: 0;text-align: left;}
+.dma_app {margin:0 0 15px 0;}
+.dma_app_id{font-size: 24px;color: #161616;padding: 0px 0 10px;margin: 0;text-align: left;}
+.table-responsive{margin:15px 0 0;}
+.dma_application_call{padding:0 10px 0 0;}
+.dma_documents h5, .dma_payment_details h5, .dma_customer_details h5{color: #161616;font-size: 18px;padding: 0 0 3px;}
+.dma_customer_details .col-md-2, .dma_payment_details .col-md-2, .dma_customer_details .col-md-2, .dma_documents .col-md-2{padding-bottom:10px;}
+.dma_customer_details .col-md-4, .dma_payment_details .col-md-4, .dma_customer_details .col-md-4, .dma_documents .col-md-4{padding-bottom:10px;}
+.dma_documents .print_btn{width:100%;padding: 5px 0;}
+.print_btn{padding:0 20px;}
+.table_content{border: 1px solid #cccccc;display: block;overflow: hidden;margin: 0 0 10px 0;padding: 10px 0;}
+.table_content .col-md-3{padding-bottom: 5px;}
+
+.pagination {margin: 0px 0 5px;}
+#resp{border: 1px solid #ddd;}
+.table>thead>tr>th {border-bottom:none;}
+.dwnld_txt{padding:0 25px 0 0;}
+.dma_application_filters,.dma_application_search{margin:0 0 20px 0}
+.dma_application_filters .form-group .form-control{width:155px;}
+.dma_application_filters .form-inline {background: #f7f7f7;padding: 10px;}
+.dma_application_filters .form-inline .btn{border-width: 1px 1px 1px 1px;font-size: 14px;padding: 6px 22px;}
+.dma_application_search .form-group .form-control{width:155px;}
+.dma_application_search .form-inline {background: #f7f7f7;padding: 10px;}
+.dma_application_search .form-inline .btn{border-width: 1px 1px 1px 1px;font-size: 14px;padding: 6px 22px;}
+.dma_application_upload {background: #f7f7f7;    padding: 10px 10px 10px 10px;margin: 15px 0;}
+.dma_application_upload a{width: 49%;font-size: 14px;}
+.well hr{margin-top: 5px;margin-bottom: 10px;}
+.well span{text-align: center;display: block;font-weight: bold;}
+.btn_uploads{margin: 0;font-size: 14px;width: 100%;}
+.pg_wrap{margin: 5px 0;font-size: 16px;}
+.dma_pagintions{margin-bottom:20px;}
+.gail-sprite {background: transparent url(../images/gail-sprite.png) no-repeat 0 0;}
+.dob-img {width: 15px;height: 18px;background-position: -119px -2px;position: absolute;right: 23px;top: 6px;}
+.dtpkr{position:relative;}
+.dma_app{min-height:500px;}
+.btn-filecolor.btn-file, .btn-filecolor.btn-file:hover, .btn-filecolor.btn-file:focus {color: #fff;padding: 5px 24px;font-size: 14px;}
+.btn-file {position: relative;overflow: hidden;}
+.btn-file input[type=file] {position: absolute;top: 0;right: 0;min-width: 100%;min-height: 100%;font-size: 100px;text-align: right;filter: alpha(opacity=0);opacity: 0;outline: none;background: white;cursor: inherit;display: block;}
+
+/**************FAQ**********************/
+.lft_menu { background:#00b5ea; border:1px solid #00a3d2; padding:0 0 100px; margin:0 0 10px 0; }
+.menu_section { border-bottom:1px solid #4dcbf0; border-top:1px solid #00a3d2; }
+.menu_section:first-child { border-top:0; }
+.menu_section .menu_head { display:block; font-size:18px; color:#fff; padding:15px 10px 0 50px; }
+.menu_section .menu_head .menu_ico { padding:0 10px; float:left; margin:-2px 0 0 -48px; }
+.menu_section .menu_head .head_txt { display:block; border-bottom:1px solid #e5be1d; padding:0 0 5px; }
+.menu_section a.menu_head { padding:15px 10px 15px 50px; text-decoration:none; }
+.menu_section .menu_links { padding:0 0 8px 50px; margin:0; }
+.menu_section .menu_links li { list-style:none; padding:0 10px 0 0; }
+.menu_section .menu_links a { display:block; color:#454545; padding:6px 0 6px 2px; text-decoration:none; border-top:1px solid #ffe163; border-bottom:1px solid #e5be1d; }
+.menu_section .menu_links li:last-child a { border-bottom:0; }
+.menu_section a:hover, .menu_section a.active { background:#00a9db; }
+.faq_head{font-size: 28px;color: #161616;margin: 0;text-align: left;}
+#integration-list ul {padding: 0;margin: 20px 0;color: #555;}
+#integration-list ul > li {list-style: none;border: 1px solid #ddd;display: block;padding: 15px;overflow: hidden;background: none !important;margin: 0 0 10px 0;}
+#integration-list ul > li:hover {background: #efefef;}
+.expand {display: block;text-decoration: none;cursor: pointer;padding: 0;}
+.detail a {text-decoration: none;color: #C0392B;border: 1px solid #C0392B;padding: 6px 10px 5px;font-size: 14px;}
+.detail {margin: 10px 0 10px 0px;display: none;line-height: 22px;}
+.detail span{margin: 0;}
+.right-arrow {float: right;font-weight: bold;font-size: 16px;}
+
+
+/***************My Account**********************/
+.bill_payment{display: block;overflow: hidden;margin: 20px 0;}
+
+
+/**************common***************/
+
+
+@media (min-width:374px) and (max-width:767px){
+.dma_application_filters .form-group .form-control {width: 100%;}
+.dma_application_search .form-inline {background: #f7f7f7;padding: 10px;width: 100%;}
+.dma_application_search .form-group .form-control {width: 100%;}
+.login-popblk {width: 100% !important;height: auto !important;top: 50%  !important;left: 50%  !important;background: #fff  !important;z-index: 50;padding: 20px !important;position: static;margin:0;display:block;overflow:hidden;}
+.login_detail .form-control {width: 100%;height: 34px;}
+.btn-login, .btn-login:hover {    color: #fff !important;width: 100%;padding: 3px 22px;font-size: 15px;margin: 20px 0 0;}
+.txtbox_content {position: absolute;right: 0;font-size: 12px;cursor: pointer;top: 55px;}
+.login_detail .bp_number p{margin:0;}
+.otp_detail {width:100%;overflow: hidden;}
+.otp_detail .form-control {width: 145px;height: 29px;margin: 0 0 0 20px;}
+.dma_application_filters .form-inline .btn {width: 100%;}
+.dma_application_search .form-inline .btn {width: 100%;}
+.dma_pagintions .col-xs-12{margin-bottom:20px;}
+.dma_pagintions .pagination{float:left !important;}
+.dma_head {padding: 25px 0 25px;}
+.mobiletxtbox {width:100%;margin:0 0 10px 0;}
+.btn.verify {margin:0;}
+#firstname{margin:0 0 10px;}
+}
+
+@media (min-width:320px) and (max-width:374px){
+.dma_application_filters .form-group .form-control {width: 100%;}
+.dma_application_search .form-inline {background: #f7f7f7;padding: 10px;width: 100%;}
+.dma_application_search .form-group .form-control {width: 100%;}
+.login-popblk {width: 100% !important;height: auto !important;top: 50%  !important;left: 50%  !important;background: #fff  !important;z-index: 50;padding: 20px !important;position: static;margin:0;display:block;overflow:hidden;}
+.login_detail .form-control {width: 100%;height: 34px;}
+.btn-login, .btn-login:hover { color: #fff !important;padding: 6px 22px;font-size: 14px;margin: 10px 0 0;}
+.txtbox_content {position: absolute;right: 0;font-size: 12px;cursor: pointer;left: 0;}
+.login_detail .bp_number p{margin:0;}
+.otp_detail {width:100%;overflow: hidden;}
+.otp_detail .form-control {width: 145px;height: 29px;margin: 0 0 0 20px;}
+.otp_detail .form-control {width: 100px;height: 29px;margin: 0 0 0 15px;}
+.dma_application_filters .form-inline .btn {width: 100%;}
+.dma_application_search .form-inline .btn {width: 100%;}
+.dma_pagintions .col-xs-12{margin-bottom:20px;}
+.dma_pagintions .pagination{float:left !important;}
+.table_content .col-md-3 {padding-bottom: 5px;min-height: 50px;}
+.dma_application_upload a {width: 49%;font-size: 100%;padding: 6px;}
+.dma_head {padding: 25px 0 0px;}
+.mobiletxtbox {width:100%;margin:0 0 10px 0;}
+.btn.verify {margin:0;}
+#firstname{margin:0 0 10px;}
+}
+

@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>KIADB | Home</title>
+</head>
+<body>
+<link href="css/styles.css" rel="stylesheet" />
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/angular-cookies.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controller.js"></script>
+    <script src="scripts/bootstrap-datepicker.js"></script>
+
+    
+    <div ng-app="MyApp" ng-controller="MyController">
+        Name:
+        <input type="text" ng-model="Name" />
+        <br />
+        <br />
+        <input type="button" value="Write Cookie" ng-click="WriteCookie()" />
+        <input type="button" value="Read Cookie" ng-click="ReadCookie()" />
+        <input type="button" value="Remove Cookie" ng-click="RemoveCookie()" />
+
+    <input type="button" class="hide" id='demo' value="Cookie1"  />        
+    </div>
+
+        <!-- <div data-ng-include="'template/header'"></div>
+            <div class="midContainer">
+                <div ng-view></div>
+            </div>
+        <div class="col-sm-12" data-ng-include="'template/footer'"></div> -->
+
+        <script>
+        var app = angular.module('MyApp', ['ngCookies']);
+        app.controller('MyController', function ($scope, $window, $cookieStore) {
+            $scope.WriteCookie = function () {
+                $cookieStore.put("Name", $scope.Name);
+                //$scope.setCookie = true;
+            };
+            $scope.ReadCookie = function () {
+                $window.alert($cookieStore.get('Name'));
+            };
+
+            /*var a = $cookieStore.get('Name');
+            $scope.$watch(
+                function() {
+                    return a;
+                }, function(n, o) {
+                $scope.test = n;
+                $scope.setCookie1 = true;
+            });*/
+
+            //setInterval(function(){
+                //$window.alert($cookieStore.get('Name'));
+            //},5000)
+
+            $scope.RemoveCookie = function () {
+                $cookieStore.remove('Name');
+            };
+
+                $(document).ready(function(){
+                  $([window]).focus(function(){
+                   var a = $cookieStore.get('Name');
+                  console.log(a);
+                  if(a == 'as'){
+                    $('#demo').show();
+                    $scope.setCookie = true;
+                } else{
+                    $scope.setCookie = false;
+                }
+                   }).focusout(function(){
+
+                 });
+               })
+        });
+
+        
+    </script>
+</body>
+</html>

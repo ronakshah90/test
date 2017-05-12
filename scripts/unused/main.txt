@@ -1,0 +1,54 @@
+$(document).ready(function(){
+  $('#home_banner').carousel({
+    interval: 6000
+  });
+  
+  $('#sel_lang').on('change', function () {
+    if($(this).val() == "Kannada")
+    {  window.location = "index_kn.html";  }
+    else
+    {  window.location = "index.html";  }
+  });
+  
+  $("#set_pwd, #cust_info, #ico_conf_verify, #pwd_str").hide();
+  
+  $("#btn_reg_cust").click(function(){
+    $("#cust_info").show();
+  });
+  
+  $("#btn_ver_otp").click(function(){
+    $("#ico_conf_verify, #set_pwd").show();
+  });
+  
+  $("#upwd").on('keypress', function(){
+    if($(this).val().length > 4)
+    {
+      $("#pwd_str").show();
+    }
+  });
+  
+  $("#add_list, #location_map, #location_map1, #location_map2, #location_map3, #location_map4").hide();
+  
+  $("#btn_loc_srch").click(function(){
+    $("#map_gail").hide();
+    $("#add_list, #location_map").show();
+  });
+  
+  $("#add1").click(function(){
+    $("#map_gail, #location_map2, #location_map3, #location_map4, #location_map").hide();
+    $("#location_map1").show();
+  });
+  $("#add2").click(function(){
+    $("#map_gail, #location_map1, #location_map3, #location_map4, #location_map").hide();
+    $("#location_map2").show();
+  });
+  $("#add3").click(function(){
+    $("#map_gail, #location_map2, #location_map1, #location_map4, #location_map").hide();
+    $("#location_map3").show();
+  });
+  $("#add4").click(function(){
+    $("#map_gail, #location_map2, #location_map3, #location_map1, #location_map").hide();
+    $("#location_map4").show();
+  });
+  
+});

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Karnataka Industrial Area Development Board</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="styles/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/fontawesome-4.2.0.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/styles.css" rel="stylesheet" />
+
+</head>
+<body ng-app="MyApp" ng-controller="MyController">
+<header>
+    <div class="header">
+                    <div class="container">
+                            <a href="#" class="logo" title="KIADB"></a>
+                        <div class="pull-right logo-right">
+                            <a href="#"><img src="img/invest-karnataka.jpg" class="img-responsive" title="Invest Karnataka" /></a>
+                            <a href="#"><img src="img/k-logo.jpg" class="img-responsive" title="Karnataka" /></a>
+                            <a href="#"><img src="img/make-in-india.jpg" class="img-responsive" title="Make In India" /></a>
+                        </div>
+                    </div>
+     </div> 
+</header>
+<div class="container-fluid">
+  <div class="row bc_row">
+    <div class="container">
+        <div class="bread pull-left">
+            <span ng-click="RemoveCookie()">You are here</span> : <a href="index" class="links">Home</a>
+            <span class="fa fa-angle-right"></span>
+            <span class="active">My Applications</span>
+        </div>
+        <div class="pull-right">
+            <span>Welcome User | <a href="" class="links"> Logout</a></span>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- div for download button and pagination-->
+
+<div class="container-fluid min_ht">
+  <div class="row">
+    <div class="container"> 
+    		<div>   		
+                    <h2 class="page_head full_subpg_head">Pending Applications</h2>                    
+             </div>
+                    <div class="col-sm-12 col-xs-12 dma_application_filters">
+                    	<form class="form-inline pull-left">
+                              <div class="form-group dtpkr">
+                                <input type="text" class="form-control" id="dob" placeholder="Start Date">
+                                <span class="gail-sprite dob-img"></span>
+                              </div>
+                              <div class="form-group dtpkr">
+                                <input type="text" class="form-control" id="dob2" placeholder="End Date">
+                                <span class="gail-sprite dob-img"></span>
+                              </div>
+                              <div class="form-group">
+                                <select class="form-control">
+                                        <option value="" selected disabled>Select Area</option>
+                                		<option>Bangalore</option>
+                                        <option>Mumbai</option>
+                                        <option>Pune</option>
+                                </select>                                
+                              </div>
+                              <div class="form-group">
+                                <select class="form-control">
+                                	    <option value="" selected disabled>Select Status</option>
+                                		<option>Open</option>
+                                        <option>Close</option>
+                                        <option>Terminate</option>
+                                </select>
+                              </div>
+                              <a href="javascript:;" title="Filter" class="btn btn-primary whiteTxt guppercase filterbtn"><i class="fa fa-filter"></i></a>
+                              <a href="javascript:;" title="Refresh" class="btn btn-primary whiteTxt guppercase filterbtn" ><i class="fa fa-refresh"></i></a>
+                        </form>
+                        <form class="form-inline pull-right">
+                            <div class="form-group adminsrchblk">
+                                <input name="searchKeyword"  placeholder="search" id="searchKeyword" type="text"  class="form-control"><i class="fa fa-search search_icon"></i>
+                            </div>
+                        </form>
+                    </div>
+            <div class="table-responsive hidden-xs">
+            <!-- to be displayed for desktop and ipad-->
+                <table id="resp" class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th class="text-center"># <span class="caret"></span></th>
+                      <th></th>
+                      <th>Request Type <span class="caret"></span></th>
+                      <th class="text-center">Date <span class="caret"></span></th>
+                      <th>Contact Details</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class='clickable-row' data-href='view-application'>
+                      <td scope="row" class="text-center"><a class="links" href="javascript:void(0)">23353</a></td>
+                      <td></td>
+                      <td>Allotment letter</td>
+                      <td class="text-center">12 Apr 17</td>
+                      <td>
+                          <span>Mr Ram Verma</span><br/>
+                          <span>Belgaum, Karnataka</span><br/>
+                          <span class="dma_application_call"><i class="fa fa-phone" aria-hidden="true"></i> +91 9820098200  </span> <span> <i class="fa fa-envelope" aria-hidden="true"></i> ram.verma@gmail.com</span>                     
+                      </td>
+                      <td>Open</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='view-application'>
+                      <td class="text-center" scope="row"><a class="links" href="javascript:void(0)">34562</a></td>
+                      <td></td>
+                      <td>Completion Certificate</td>
+                      <td class="text-center">11 Apr 17</td>
+                      <td>
+                          <span>Mr Ram Verma</span><br/>
+                          <span>Belgaum, Karnataka</span><br/>
+                          <span class="dma_application_call"><i class="fa fa-phone" aria-hidden="true"></i> +91 9820098200  </span> <span> <i class="fa fa-envelope" aria-hidden="true"></i> ram.verma@gmail.com</span>                     
+                      </td>
+                      <td>In Progress</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='view-application'>
+                      <td class="text-center" scope="row"><a class="links" href="javascript:void(0)">43254</a></td>
+                      <td></td>
+                      <td>Possession Certificate</td>
+                      <td class="text-center">10 Apr 17</td>
+                      <td>
+                          <span>Mr Ram Verma</span><br/>
+                          <span>Belgaum, Karnataka</span><br/>
+                          <span class="dma_application_call"><i class="fa fa-phone" aria-hidden="true"></i> +91 9820098200  </span> <span> <i class="fa fa-envelope" aria-hidden="true"></i> ram.verma@gmail.com</span>                     
+                      </td>
+                      <td>Closed</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='view-application'>
+                      <td class="text-center" scope="row"><a class="links" href="javascript:void(0)">2312248</a></td>
+                      <td></td>
+                      <td>Completion Certificate</td>
+                      <td class="text-center">05 Apr 17</td>
+                      <td>
+                          <span>Mr Ram Verma</span><br/>
+                          <span>Belgaum, Karnataka</span><br/>
+                          <span class="dma_application_call"><i class="fa fa-phone" aria-hidden="true"></i> +91 9820098200  </span> <span> <i class="fa fa-envelope" aria-hidden="true"></i> ram.verma@gmail.com</span>                     
+                      </td>
+                      <td>Open</td>
+                    </tr>
+                    <tr class='clickable-row' data-href='view-application'>
+                      <td class="text-center" scope="row"><a class="links" href="javascript:void(0)">2312248</a></td>
+                      <td></td>
+                      <td>Possession Certificate</td>
+                      <td class="text-center">02 Apr 17</td>
+                      <td>
+                          <span>Mr Ram Verma</span><br/>
+                          <span>Belgaum, Karnataka</span><br/>
+                          <span class="dma_application_call"><i class="fa fa-phone" aria-hidden="true"></i> +91 9820098200  </span> <span> <i class="fa fa-envelope" aria-hidden="true"></i> ram.verma@gmail.com</span>                     
+                      </td>
+                      <td>Closed</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+            </div>
+            <!-- end of divs-->
+            
+            <!-- will be displayed for mobile device only-->
+            <div class="table visible-xs" >
+            	<div class="table_content clickable-row" data-href='view-application'>
+                    <div class="col-md-3 col-xs-4"><strong>#</strong></div>
+                    <div class="col-md-3 col-xs-8"><a class="links" href="view-application">2312248</a></div>
+                    <div class="col-md-3 col-xs-4"><strong>Request Type</strong></div>
+                    <div class="col-md-3 col-xs-8">seafarer</div>
+                    <div class="col-md-3 col-xs-4"><strong>Date</strong></div>
+                    <div class="col-md-3 col-xs-8">12/03/16</div>
+                    <div class="col-md-3 col-xs-4"><strong>Contact Details</strong></div>
+                    <div class="col-md-3 col-xs-8"><span>Mr Ram Verma</span><br/>
+                          <span>Ayyapkakam, Plot #4445, TNHB, Main Road, Bangaluru - 343435</span><br/>
+                          <span class="dma_application_call"><i class="fa fa-phone" aria-hidden="true"></i> +91 98200 98200</span> <br/><span> <i class="fa fa-envelope" aria-hidden="true"></i> ram.verma@gmail.com</span></div>
+                    <div class="col-md-3 col-xs-4"><strong>Status</strong></div>
+                    <div class="col-md-3 col-xs-8">Open</div>
+                </div>
+                <div class="table_content clickable-row" data-href='view-application'>
+                    <div class="col-md-3 col-xs-4"><strong>#</strong></div>
+                    <div class="col-md-3 col-xs-8"><a class="links" href="view-application">2312248</a></div>
+                    <div class="col-md-3 col-xs-4"><strong>Request Type</strong></div>
+                    <div class="col-md-3 col-xs-8">seafarer</div>
+                    <div class="col-md-3 col-xs-4"><strong>Date</strong></div>
+                    <div class="col-md-3 col-xs-8">12/03/16</div>
+                    <div class="col-md-3 col-xs-4"><strong>Contact Details</strong></div>
+                    <div class="col-md-3 col-xs-8"><span>Mr Ram Verma</span><br/>
+                          <span>Ayyapkakam, Plot #4445, TNHB, Main Road, Bangaluru - 343435</span><br/>
+                          <span class="dma_application_call"><i class="fa fa-phone" aria-hidden="true"></i> +91 98200 98200</span> <br/><span> <i class="fa fa-envelope" aria-hidden="true"></i> ram.verma@gmail.com</span></div>
+                    <div class="col-md-3 col-xs-4"><strong>Status</strong></div>
+                    <div class="col-md-3 col-xs-8">Open</div>
+                </div>
+            </div>
+            
+            <!--end of div-->
+      
+     </div>     
+  </div>
+</div>
+
+<!-- div for download button and pagination-->
+
+<div class="container-fluid">
+    <div class="row">
+            <div class="container">
+                <div class="row dma_pagintions">
+                    <div class="col-sm-12 col-xs-12">
+                        <ul class="pagination pull-right">
+                          <li><a href="#"><<</a></li>
+                          <li><a href="#"><</a></li>
+                          <li><a href="#">1</a></li>
+                          <li class="active"><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">>></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+     </div>     
+  </div>
+</div>
+
+
+<!--start of footer-->
+<div class="container-fluid">
+  <div class="row site_footer">
+    <div class="container">
+      <div class="row">
+         <div class="copy-txt">Copyright 2017 Karnataka Industrial Area Development Board</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JAVASCRIPTS --> 
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/bootstrap-datepicker.min.js"></script>
+<script src="scripts/dma-main.js"></script>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/angular-cookies.min.js"></script>
+
+<script>
+        var app = angular.module('MyApp', ['ngCookies']);
+        app.controller('MyController', function ($scope, $window, $cookieStore) {
+            var redirectToPayment = $('#redirectToPayment').attr('data-cookievalue');
+            
+            $scope.WriteCookie = function () {
+                //console.log(redirectToPayment);
+                $cookieStore.put("Name", $cookieStore.get('Name'));
+                //$scope.setCookie = true;
+            };
+            $scope.ReadCookie = function () {
+                $window.alert($cookieStore.get('Name'));
+            };
+
+            $scope.RemoveCookie = function () {
+                $cookieStore.remove('Name');
+            };
+
+                /*$(document).ready(function(){
+                  $([window]).focus(function(){
+                   var a = $cookieStore.get('Name');
+                  console.log(a);
+                  if(a == 'redirectToPayment'){
+
+                } else{
+                }
+                   }).focusout(function(){
+
+                 });
+               })*/
+        });
+
+        
+    </script>
+</body>
+</html>

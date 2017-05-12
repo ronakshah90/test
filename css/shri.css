@@ -1,0 +1,28 @@
+body.db{background-color:#fff !important}
+
+.dashboard-title {
+    border-bottom: 1px solid #ccc;
+    /*margin-bottom: 30px;*/
+    background: #efefef;
+}
+.row.secondlevel {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.menuWrap{height: 100%}
+.footer{display: none}
+.main_wrap{padding-bottom:0;}
+h4.graphtitle {
+    border-left: 1px solid #c9c9c9;
+    margin: 0;
+    padding: 10px 0px 10px 10px;
+    border-right: 1px solid #c9c9c9;
+    border-top: 1px solid #c9c9c9;
+    font-size: 16px;
+}
+.localmap img{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.graph{margin:15px 0 0;}

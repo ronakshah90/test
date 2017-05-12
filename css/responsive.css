@@ -1,0 +1,144 @@
+/*******banner  arrows*****************/
+
+.subpages .header {box-shadow: none;}
+
+.left_info{background: #e4f9ff;color: #717171;font-size: 13px;}
+.left_info span{font-size:28px;}
+.left_info p strong{font-size:18px;}
+.lbl-bill.lbl-bill{width: 120px;display: block;float: left;}
+.badge{color: #000000;background-color: #faf037;}
+
+.left_info hr{border: 0;border-top: 1px solid #a0e4fb;margin-top: 10px;border-bottom: 1px solid #ffffff;}
+
+
+@media (min-width:374px) and (max-width:767px){
+/***********header*****************/
+header.stickyheader {padding: 0 15px;}
+select.sel_location {padding: 5px 7px;}
+#main_nav ul li a {border-right:none;}
+#main_nav ul li { height: auto;}
+#main_nav.navbar-collapse.collapse.in {background: #fff;clear: both;display: block;float: none !important;padding: 0;position: relative;z-index: 10;top: 11px;margin: 0 -15px;}
+#main_nav ul li:last-child a {padding: 8px 32px 8px 15px;}
+.link_login:after {right: 15px;}
+#main_nav ul li a {padding: 8px 15px;color: #086135;}
+#main_nav ul {padding:0;border-top: 1px solid #e5e5e5;}
+.ttz-dropdownblk:hover .ttz-dropdown {transition: margin-top 4s ease-in-out 1s;display:none;}
+/*******login********/
+.login-popblk {width: 100% !important;height: auto !important;top: 30%  !important;left: 0  !important;background: #fff  !important;z-index: 50;padding: 20px !important;margin:0;display:none;overflow:hidden;}
+.login_detail .form-control {width: 100%;height: 34px;}
+.btn-login, .btn-login:hover {     color: #fff !important;width: 100%;padding: 6px 22px;font-size: 14px;margin: 5px 0 0;}
+.txtbox_content {position: absolute;right: 0;font-size: 12px;cursor: pointer;left:0;}
+.login_detail .bp_number p{margin:0;}
+.otp_detail {width:100%;overflow: hidden;}
+.otp_detail .form-control {width: 180px;height: 29px;margin: 0 0 0 20px;}
+/*******apply now-form********/
+.mobiletxtbox {width: 100%;margin: 0 0 10px 0;}
+.btn.verify {margin: 0}
+#firstname{margin: 0 0 15px;}
+
+/*******Track application********/
+.trackApplication{margin-bottom: 10px;}
+.upload_doc{padding: 14px}
+.payment{ padding: 14px 40px;}
+/*******my account bills****/
+.bill_history .table_content .col-md-3 {margin: 0 0 10px 0;}
+.bill_history .pay_now_btn {padding: 5px 10px;font-size: 13px;margin: 0;width:49%;}
+.mg_acc_select{ padding: 15px 15px 15px;}
+.cmt {float: left;width: 75%;}
+.row_btn a {width: 100%;margin: 0 0 10px 0;}
+.track_applicationblk .col-xs-5, .track_applicationblk .col-xs-7{margin:0 0 10px 0;}
+.track_applicationblk .row { margin-top: 0;}
+#back_top {position: fixed;bottom: 55px;right: 10px;z-index: 15;}
+.form-control.lang-selecbox {border-left:none;}
+.rate_cards{width:100% !important;    margin: 0 0 5px 0;}
+.lft_menu {padding:0; margin:0;}
+.gail_footer{margin-top:0;}
+.placeholder-img {height:100%;}
+.benefits {height:100%;}
+.side_separator {border-bottom: 1px solid #e4e4e4;}
+.side_separator:last-child{border-bottom: none;}
+.media_txt2 {height:100%;}
+}
+
+@media (min-width:320px) and (max-width:374px){
+.ttz-dropdownblk:hover .ttz-dropdown {transition: margin-top 4s ease-in-out 1s;display:none;}
+ 
+.upload_doc{padding: 14px}
+.payment{ padding: 14px 40px;}
+.trackApplication{margin-bottom: 10px;}
+.email-ellipsis {float: left;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;max-width: 160px;}
+/***********header*****************/
+header.stickyheader {padding: 0 15px;}
+select.sel_location {padding: 5px 7px;margin:0; font-size: 11px;}
+.header {background: #ffffff;height: 94px;z-index: 12;}
+.logo{width: 135px;}
+.navbar-toggle {margin: 0px 0 0 10px !important;}
+span.gail-sprite.sel_location_img {margin: -4px 0 0 4px;}
+#main_nav ul li a {border-right:none;}
+#main_nav ul li { height: auto;}
+#main_nav.navbar-collapse.collapse.in {background: #fff;clear: both;display: block;float: none !important;padding: 0;position: relative;z-index: 10;top: 11px;margin: 0 -15px;}
+#main_nav ul li:last-child a {padding: 8px 32px 8px 15px;}
+.link_login:after {right: 15px;}
+#main_nav ul li a {padding: 8px 15px;color: #086135;}
+#main_nav ul {padding:0;border-top: 1px solid #e5e5e5;}
+/*******login********/
+.login-popblk {width: 100% !important;height: auto !important;top: 30%  !important;left: 0  !important;background: #fff  !important;z-index: 50;padding: 20px !important;margin:0;display:none;overflow:hidden;}
+.login_detail .form-control {width: 100%;height: 34px;}
+.btn-login, .btn-login:hover {color: #fff !important;width: 100%;padding: 6px 22px;font-size: 14px;margin: 10px 0 0;}
+.bp_number.otpblk {margin: 10px 0 0 0;}
+.txtbox_content {position: absolute;right: 0;font-size: 12px;cursor: pointer;left: 0;}
+.login_detail .bp_number p{margin:0;}
+.otp_detail {width:100%;overflow: hidden;}
+.otp_detail .form-control {width: 145px;height: 29px;margin: 0 0 0 5px;}
+/*******apply now-form********/
+.mobiletxtbox {width: 100%;margin: 0 0 10px 0;}
+.btn.verify {margin: 0}
+#firstname{margin: 0 0 15px;}
+/**********my account bills***********/
+.bill_history .table_content .col-md-3 {margin: 0 0 10px 0;}
+.bill_history .pay_now_btn {padding: 5px 10px;font-size: 13px;margin: 0;width:49%;}
+.mg_acc_select{padding: 15px 0 15px;}
+.cmt {float: left;width: 70%;}
+/************************/
+.row_btn{margin-top:20px;}
+.row_btn a{width:100%;margin:0 0 10px 0;}
+
+/******************/
+.col_cont {float: left;padding: 0 0 0 5%;width: 60%;}
+.act .col_cont {width: 70%;}
+.track_applicationblk .col-xs-5, .track_applicationblk .col-xs-7{margin:0 0 10px 0;}
+.track_applicationblk .row { margin-top: 0;}
+#back_top {position: fixed;bottom: 55px;right: 10px;z-index: 15;}
+.form-control.lang-selecbox {border-left:none;}
+.rate_cards{width:100% !important;    margin: 0 0 5px 0;}
+.lft_menu {padding:0; margin:0;}
+.gail_footer{margin-top:0;}
+.placeholder-img {height:100%;}
+.benefits {height:100%;}
+
+.side_separator {border-bottom: 1px solid #e4e4e4;}
+.side_separator:last-child{border-bottom: none;}
+.media_txt2 {height:100%;}
+}
+
+@media (min-width:1024px) and (max-width:1280px){
+	.banner_content_wrapper {
+    	width: 80%;
+	}
+}
+
+@media (min-width:0) and (max-width:780px){
+	.banner_content_wrapper {
+    	width: 80%;
+	}
+	.banner_content {
+    	top: 140px;
+	}
+}
+@media (max-width:900px) {
+    
+    .otpbtnblk .btn.verify, .mobverify-btnblk .btn.verify {
+    margin: 0 0 0 6px;
+    padding: 5px 14px;
+    }
+}

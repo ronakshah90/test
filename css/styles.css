@@ -1,0 +1,135 @@
+.main_wrap { min-width:990px; padding-bottom:40px; }
+.form-control:focus { border-color: #6faa00;outline: 0;}
+
+/* Header styles */
+.header { overflow:hidden;border-top:4px solid #dd3216; color:#474747; background:#ffffff; position:relative; z-index:10;}
+.logo { background:url('../img/logo.jpg') no-repeat 0 0; width:170px; height:60px; float:left;}
+.logo-right a{float:left;padding: 0 10px;}
+
+.landing_footer{padding: 8px 0px;border-top:1px solid #da3016;width: 100%;bottom: 0 !important;background-color: #36231d;color: #f0e1cc;font-size: 12px;width: 100%;z-index: 20;position: absolute;}
+.copy-txt{text-align:center;}
+
+.no_border { border:0 !important;}
+.app_name { float:left; display:block; padding:12px 8px 0; }
+.config_link { padding:6px 0 0 10px !important; }
+.icon_style{font-size: 22px !important;padding: 3px;}
+.c2a_icon{font-size:50px !important;}
+.title_txt{vertical-align: 3px;}
+
+.blueheadingbig{ font-family:Verdana, Geneva, sans-serif; font-size:18px; color:#3073B6; font-weight:bold}
+.blueheadingsmall{ font-family:Verdana, Geneva, sans-serif; font-size:13px; color:#e54020  !important;text-decoration:none !important;}
+.blueheadingsmall a{ font-family:Verdana, Geneva, sans-serif; font-size:13px; color:#e54020; text-decoration:none;}
+.loginbt{ background:#e5411e ; border:none; color:#ffffff;}
+.loginbt:hover, .loginbt:active, .loginbt:focus, btn-primary:active:hover{ background:#e5411e ; border:none; color:#ffffff !important;}
+
+.loginbox1{box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);padding: 10px;position: absolute;width: 370px;height: 280px;top: 50%;left: 50%;background: #fff;z-index: 50;padding: 20px;margin: 185px 0 0 -185px;}
+.login_txt{margin: 0 0 20px 0;padding: 0 0 10px 0;border-bottom: 1px solid #ac3227;}
+/*.loginbox1{background-color:#fff; position:absolute; height:400px; top:0px; width:300px; right: 86px; opacity: 0.85; filter:alpha(opacity=70); padding:20px;  }*/
+
+.logo-txt{margin: 15px;display: inline-block;color: #e5411e;font-size: 18px;}
+/**************dashboard****************/
+
+.site_footer { background:#36231d; padding:10px; font-size:12px; color:#f0e1cc;  border-top: 2px solid #dc3316;}
+.bc_row { background:#f7f7f7; border-top:1px solid #b6b6b6; border-bottom:1px solid #e2e2e2; padding:8px 0; }
+.bc_row .fa { padding:0 3px; }
+.guppercase{text-transform: uppercase;font-size:14px;} /*for buttons*/
+.back_link{font-size: 13px;padding: 15px 0 0;color: #086135;text-decoration:none !important;}/*for back links*/
+.back_link:hover{color: #00aadc;}/*for back links*/
+.links{font-size: 14px;padding: 15px 0 0;color: #e5411e;text-decoration:none !important;font-weight: normal;}/*for links*/
+.links:hover{color: #00aadc;}/*for links*/
+.head_subpg_side{font-size: 28px;color: #161616;margin: 0;text-align: left;padding: 0 0 10px 0;border-bottom: 1px solid #00aadc;}/*for head with sidebar*/
+#integration-list{margin: 35px 0;clear: both;display: block;overflow: hidden;padding: 20px 0 0 0;}
+.applynow-form{margin: 35px 0 0;display: block;overflow: hidden;}
+.table>thead>tr>th {color: #161616;font-weight: normal;font-size: 16px;}
+.lbl_txt{width: 100px;display: block;float: left;}
+.lbl{font-weight: normal;padding-top: 7px;}
+.page_head{font-size: 28px;color: #161616;margin: 0;text-align: left;border-left: 5px solid #db3215;}
+.full_subpg_head{ padding: 5px 15px 5px;margin: 15px 0;}/**for subpage_head **/
+.dma_application_filters .form-inline .btn.filterbtn {padding: 6px 15px;}
+.dma_application_search i.fa.fa-search {position: absolute;right: 30px;top: 20px;}
+.table-responsive{margin:15px 0 0;clear:both;}
+.pagination {margin: 0px 0 5px;}
+#resp{border: 1px solid #ddd;}
+.table>thead>tr>th {border-bottom:none;}
+.dwnld_txt{padding:0 25px 0 0;}
+.dma_application_filters,.dma_application_search{margin:0 0 20px 0}
+.dma_application_filters .form-group .form-control{width:155px;}
+.dma_application_filters{background: #f6ece2;padding: 15px;border: 1px solid #cfcfcf;}
+.dma_application_filters .form-inline .btn{border-width: 1px 1px 1px 1px;font-size: 14px;padding: 6px 22px;background: #fdb433;border: none;}
+.dma_application_search .form-group .form-control{width:155px;}
+.dma_application_search .form-inline {background: #f7f7f7;padding: 10px;}
+.dma_application_search .form-inline .btn{border-width: 1px 1px 1px 1px;font-size: 14px;padding: 6px 22px;}
+.dma_pagintions{margin-bottom:20px;}
+.table > thead > tr > th {background:#f6ece2}
+.search_icon{position:absolute;top:25px; right:30px;}
+.min_ht{min-height:720px}
+
+
+/*********************Details***********************/
+
+.view_app_wrap{background:#f7f7f7; margin:20px 0 20px 0; padding: 20px 20px 20px 20px;    border: 1px solid #cfcfcf;}
+.sub_heads{font-size: 20px;font-weight: bold;margin-top: 0;    border-bottom: 1px solid #ac3227;padding-bottom: 10px;}
+.sub_heads_2{font-size: 20px;font-weight: bold;margin-top: 0;    border-bottom: 1px solid #ac3227;padding: 15px 15px ;margin: 0;}
+.gap{margin-bottom:10px;}
+.application-buttons{margin: 30px 0 30px 0}
+.approvebtn{background: #fdb433;border: none;}
+.space_gap{margin: 0 0 0 10px;}
+.links_2{font-size: 14px;padding: 15px 0 0;color: #00aadc;text-decoration:none !important;font-weight: normal;}/*for links*/
+.links_2:hover{color: #e5411e;}/*for links*/
+.comment_description {border: 1px solid #cfcfcf;margin-top:20px;}
+.comments_section{display:block;overflow:hidden;margin: 20px 0 0;}
+.comments_section p{padding:10px 15px 10px 15px;    display: block;overflow: hidden;border-bottom: 1px solid #e2e2e2; margin: 0;}
+.comments_section p:last-child {border-bottom: none;}
+.odd{background-color:#f9f9f9;}
+
+
+
+
+
+/************Pagination**********************/
+.pagination>li {display: inline;background: none !important; padding:0;}
+.pagination>li>a, .pagination>li>span {position: relative;float: left;padding: 6px 12px;margin-left: -1px;line-height: 1.42857143;color: #e5411e;text-decoration: none;background-color: #fff;border: 1px solid #ddd;}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {z-index: 2;color: #fdb433;background-color: #ffffff;border-color: #ddd;text-decoration:none;}
+.pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0;border-top-left-radius: 2px;border-bottom-left-radius: 2px;}
+.pagination>li:last-child>a, .pagination>li:last-child>span {border-top-right-radius: 2px;border-bottom-right-radius: 2px;}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {z-index: 3;color: #fff;cursor: default;background-color: #fdb433;border-color: #fdb433;}
+
+
+/**********************************/
+.head{margin: 0 0 15px 0;border-bottom: 1px solid #f2f2f2;padding: 0 0 15px 0;}
+.overview_blk{margin:15px;border: 1px solid #c9c9c9;padding:15px;overflow:hidden;}
+.time_stmp{float:right;}
+.lists{list-style: none;padding: 0;margin: 15px 0;}
+.lists li{padding: 5px 0;border-bottom: 1px solid #c9c9c9;margin-bottom: 5px;}
+.blocks{background: #ff9b2b;padding: 20px 10px;margin: 10px 0 10px;text-align: center;color: #ffffff;}
+.blocks.blok{background-color: #66cc33}
+.risk_cnt, .risk_cnt .fa{font-size: 30px;}
+.risk_title{font-size:11px;}
+.risk_blocks{border-right: 1px solid #c9c9c9;border-left: 1px solid #c9c9c9;}
+.full_grid_col, .grid_col {background: #FFFFFF;border: 1px solid #c9c9c9;padding: 0;}
+.list-btn{margin: 20px 0;}
+.list-btn a{font-size: 20px;padding:0 5px;border: 1px solid #cfcfcf;color: #fdb433;margin:0 5px;    display: inline-block;}
+
+@media (min-width:374px) and (max-width:767px){
+.dma_application_filters .form-group .form-control {width: 100%;}
+.dma_application_search .form-inline {background: #f7f7f7;padding: 10px;width: 100%;}
+.dma_application_search .form-group .form-control {width: 100%;}
+.dma_application_filters .form-inline .btn {width: 100%;}
+.dma_application_search .form-inline .btn {width: 100%;}
+.dma_pagintions .col-xs-12{margin-bottom:20px;}
+.dma_pagintions .pagination{float:left !important;}
+}
+
+@media (min-width:320px) and (max-width:374px){
+.dma_application_filters .form-group .form-control {width: 100%;}
+.dma_application_search .form-inline {background: #f7f7f7;padding: 10px;width: 100%;}
+.dma_application_search .form-group .form-control {width: 100%;}
+.dma_application_filters .form-inline .btn {width: 100%;}
+.dma_application_search .form-inline .btn {width: 100%;}
+.dma_pagintions .col-xs-12{margin-bottom:20px;}
+.dma_pagintions .pagination{float:left !important;}
+.table_content .col-md-3 {padding-bottom: 5px;min-height: 50px;}
+}
+
+
+.normalview,.paginationblk,#listview{display:none;}

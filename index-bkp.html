@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html style="height:100%;">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Karnataka Industrial Area Development Board</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link href="css/styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen" />
+ 
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/supersized.3.2.7.js"></script>
+<script src="js/supersized.shutter.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jstree.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="js/layout-custom.js" type="text/javascript"></script>
+<script src="js/jQuery/ui/jquery.effects.core.js"></script>
+<script src="js/jQuery/ui/jquery.effects.slide.js"></script>
+<script src="js/jQuery/ui/jquery.ui.core.js"></script>
+<script src="js/jQuery/ui/jquery.ui.widget.js"></script>
+<script src="js/jQuery/ui/jquery.ui.mouse.js"></script>
+<script src="js/jQuery/ui/jquery.ui.draggable.js"></script>
+<script src="js/jQuery/ui/jquery.ui.position.js"></script>
+<script src="js/jQuery/ui/jquery.ui.resizable.js"></script>
+<script src="js/jQuery/ui/jquery.ui.dialog.js"></script>
+<script src="js/jquery.contextmenu.js"></script>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+</head>
+<body class="bdy_login" >
+    <header>
+        <div class="header">
+            <div class="container">
+                    <a href="#" class="logo" title="KIADB"></a>
+                <div class="pull-right logo-right">
+                    <a href="#"><img src="img/invest-karnataka.jpg" class="img-responsive" title="Invest Karnataka" /></a>
+                    <a href="#"><img src="img/k-logo.jpg" class="img-responsive" title="Karnataka" /></a>
+                    <a href="#"><img src="img/make-in-india.jpg" class="img-responsive" title="Make In India" /></a>
+                </div>
+            </div>
+        </div> 
+    </header>
+    <div id="controls-wrapper" class="load-item">
+		<div id="controls">
+			<ul id="slide-list"></ul>
+		</div>
+    </div>
+    <div class="container" style="position:relative">
+        <!-- Jssor Slider Begin -->
+        <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+        <!-- ================================================== -->
+        
+        <!-- Jssor Slider End -->
+        <div class="overlay">
+         <div class="loginbox1">
+         
+             <form class="col-sm-12" id="frm_login" action="index.html" method="post">
+                 <h2 class="login_txt">Login</h2>
+              <div class="form-group"><input type="text" class="form-control" name="uname" id="uname" placeholder="Username" /></div>
+              <div class="form-group"><input type="password" class="form-control" name="upwd" id="upwd" placeholder="Password" /></div>
+              <div class="form-group"><a href="javascript:;" title="" class="blueheadingsmall">Forgot Password?</a></div>
+              <div class="form-group"><input type="submit" class="btn btn-primary loginbt"  style="width:100px;" value="Login" /></div>
+            </form>
+         </div>
+        </div>
+    </div>
+    <div class="landing_footer g5" style="bottom:0; top:inherit;">
+    <div class="footer-left fL">
+      <div class="copy-txt">Copyright 2017 Karnataka Industrial Area Development Board</div>
+    </div>
+  </div>
+   
+ 
+
+      <script>
+        $(document).ready(function() {
+          $.supersized({
+					slide_interval          :   3000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	1500,		// Speed of transition
+					thumbnail_navigation	: false,
+                                        image_protect : 0,
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 					:  	[			// Slideshow Images
+													{image : 'img/img_01.jpg'},
+													{image : 'img/img_02.jpg'},  
+													{image : 'img/img_03.jpg'},
+													{image : 'img/img_04.jpg'}
+												]
+					
+				});
+        });
+		
+		swfobject.registerObject("FLVPlayer");
+    </script>
+</body>
+</html>

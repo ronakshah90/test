@@ -1,0 +1,18 @@
+
+.ico_srch i.fa.fa-search {color: #ffffff;border: 1px solid #ffffff;}
+.ico_srch {display:block;}
+.employee-logo {float: right;padding: 0 0px 0 0;margin: -20px 0px 0 0;}
+.marg_35{margin:35px 0 35px 0;}
+@media (min-width: 1000px) and (max-width:1440px){
+#main_nav ul li a {font-size: 13px;}
+}
+@media (min-width: 1000px) and (max-width:1240px){
+.circleblk-wrapper {margin: 0 0 0 95px;}
+.commencement-txt.commencement-txt {left:0;}
+.mobiletxtbox {width: 305px;}
+.width_70{width:75%;}
+.ht_c2a ul li {line-height: 23px;}
+.news_sect {padding: 0 0 10px;margin: 0 0 10px;}
+.left_info span {font-size: 23px;}
+.dma_application_filters .form-group .form-control {width: 120px;}
+}

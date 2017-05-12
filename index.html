@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Karnataka Industrial Area Development Board</title>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link href="css/styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen" />
+ 
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/supersized.3.2.7.js"></script>
+<script src="js/supersized.shutter.js"></script>
+
+
+</head>
+<body class="bdy_login" >
+    <header>
+        <div class="header">
+            <div class="container">
+                    <a href="#" class="logo" title="KIADB"></a>
+                    <span class="logo-txt">Karnataka Industrial Area Development Board</span>
+                <div class="pull-right logo-right">
+                    <a href="#"><img src="img/invest-karnataka.jpg" class="img-responsive" title="Invest Karnataka" /></a>
+                    <a href="#"><img src="img/k-logo.jpg" class="img-responsive" title="Karnataka" /></a>
+                    <a href="#"><img src="img/make-in-india.jpg" class="img-responsive" title="Make In India" /></a>
+                </div>
+            </div>
+        </div> 
+    </header>
+    <div id="controls-wrapper" class="load-item">
+  		<div id="controls">
+  			<ul id="slide-list"></ul>
+  		</div>
+    </div>
+    <div class="container" style="position:relative">
+        <!-- Jssor Slider Begin -->
+        <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+        <!-- ================================================== -->
+        
+        <!-- Jssor Slider End -->
+        <div class="overlay">
+         <div class="loginbox1">
+         
+             <form class="col-sm-12" id="frm_login" action="index" method="post">
+                 <h2 class="login_txt">Login</h2>
+              <div class="form-group"><input type="text" class="form-control" name="uname" id="bpnumberTxtbox" placeholder="Username" /></div>
+              <div class="form-group"><input type="password" class="form-control" name="upwd" id="passwordTxtbox" placeholder="Password" /></div>
+              <div class="form-group"><a href="javascript:;" title="" class="blueheadingsmall">Forgot Password?</a></div>
+              <div class="form-group">
+<button type="button" class="btn btn-login guppercase whiteTxt loginbt fR" id="mainlogin" aria-expanded="false">Login</button>
+              </div>
+            </form>
+         </div>
+        </div>
+    </div>
+    <div class="landing_footer g5" style="bottom:0; top:inherit;">
+    <div class="footer-left fL">
+      <div class="copy-txt">Copyright 2017 Karnataka Industrial Area Development Board</div>
+    </div>
+  </div>
+   
+ 
+
+      <script>
+        $(document).ready(function() {
+          $.supersized({
+					slide_interval          :   3000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	1500,		// Speed of transition
+					thumbnail_navigation	: false,
+                                        image_protect : 0,
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 					:  	[			// Slideshow Images
+													{image : 'img/img_01.jpg'},
+													{image : 'img/img_02.jpg'},  
+													{image : 'img/img_03.jpg'},
+													{image : 'img/img_04.jpg'}
+												]
+					
+				});
+        });
+		
+		//swfobject.registerObject("FLVPlayer");
+
+
+var kiadbHomepage = (function() {
+
+    var bpnumberTxtbox = document.getElementById('bpnumberTxtbox'),
+      passwordTxtbox = document.getElementById('passwordTxtbox');
+
+    var mainloginblkSubmit = function(){
+        if (bpnumberTxtbox.value && passwordTxtbox.value){
+          if(bpnumberTxtbox.value == 'dicuser'){
+            localStorage.setItem("loginstatus", "approver");
+            location.href = 'dashboard';
+          } else if(bpnumberTxtbox.value == 'xyz') {
+            localStorage.setItem("loginstatus", "reviewer");
+            location.href = 'dashboard';
+          }
+          } else {
+            bpnumberTxtbox.style.borderColor = "#ff0000";
+            passwordTxtbox.style.borderColor = "#ff0000";
+            bpnumberTxtbox.addEventListener('focus',function(){
+              bpnumberTxtbox.style.borderColor = "#ccc";
+            });
+            passwordTxtbox.addEventListener('focus',function(){
+              passwordTxtbox.style.borderColor = "#ccc";
+            })
+         // }
+        }
+      }
+        return {
+          MainLoginblkSubmit: mainloginblkSubmit,
+        }
+      })();
+
+      var mainlogin = document.getElementById('mainlogin');
+      if(mainlogin)
+      mainlogin.onclick = function() {
+          kiadbHomepage.MainLoginblkSubmit();
+        }
+
+        
+
+    </script>
+</body>
+</html>
